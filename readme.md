@@ -60,6 +60,8 @@ But keep it simple.
 ## Screenshot (GUI)
 ![screenshot](screenshot.png){ width=60% }
 
+![screenshot](screenshot1.png){ width=60% }
+
 ## Goals
 May later it would be possible to make a datalogger out of this. Without internet connection to the manufacturer servers.
 

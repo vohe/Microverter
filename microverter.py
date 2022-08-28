@@ -181,8 +181,10 @@ class BosswerkDeyeMicroinverter:
         kwprice = float(str(self.price_kw))
         if self.wpeaknow.isnumeric():
             self.price_now = kwprice * float(self.wpeaknow) / 1000
-        self.price_today = kwprice * float(str(self.kwtoday))
-        self.price_total = kwprice * float(str(self.kwtotal))
+        if not self.kwtoday == '':
+            self.price_today = kwprice * float(str(self.kwtoday))
+        if not self.kwtotal =='':
+            self.price_total = kwprice * float(str(self.kwtotal))
 
     def set_statusbar_text(self, newtext):
         """
